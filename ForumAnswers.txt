@@ -1,0 +1,80 @@
+Review Questions for Introduction to Programming
+*Done on VIM so sorry for txt file Mr. Jude
+
+1) Answer: B  ..... The reason for it being B is because
+the f(x) function has two return values. Therefor when the 
+variables x and y were set equal to f(5), these return values
+were assigned to x and y sequentially. x would equal 7 and
+y would equal 10. Add them together its 17.
+
+2) Answer: True ..... I would say true because if it can work
+for variables then it should be able to work with a function
+and a class
+
+3) Answer: D ..... The function is simple, it takes an arguement of
+5 which is x inside of the parameter. There is a local variable q
+being created that is equal to 4 * x + 1 and with order of operations
+it will q= 4*5+1 and therefor q equals 21 and gets returned. However the 
+print statement that prints q is outside of the function and doesnt have 
+access to q. This is a scope problem.
+
+4) Answer: D ..... I thought this produces an error because this function has no
+return value. Therefor theoretically you cant set a variable equal to the function
+if there is no value being returned for the variable BUT Python amazes me again
+and runs the code anyways giving the global q variable a data type of NONE.
+The reason why it prints out 21 is because the function is still being invoked
+and will run anyway despite it being set equal to something
+
+5) Answer: B ..... The value will be 21 because it follows the function correctly
+despite being a q also created within the function. This is because it treats local
+q as a whole different variable than global q when it is being set equal to something
+within the scope of the function. so that is why it is able to return local q as its own 
+value. 
+
+6) Answer: E ..... This produces none of the above because there is no return value for
+the variable.
+
+7) Answer: C ..... Double slash operator otherwise known as floor division will 
+be the first in the order of operatins and  6 // 12 would equal to 0 since it would
+round the answer to 0. After that it would be 5+0 leaving the answer to be 5
+
+8) Answer: A ..... This produces an error because def is a reserved word made for only
+creating functions. Therefor it cant be used as a variable to hold a value or else
+your IDE would be confused. If it was named any other variable the result would be
+11. Since the modulus negates the value on the right if it's greater than the value on the
+left
+
+9) Answer: D ..... This produces an error because although get_input() has a return statement
+there is no placeholder for the value, there is no variable given the return value within
+main(). That means x will be undefined and the program will produce an error.
+
+10) Answer: C ..... This would be C because the print statement accepts values that can
+be given by functions and in this case its 2, turned into a float its 2.0. Then when its 
+passed to main() it wil square it and make it 4.0. 
+
+11) Answer: D ..... I didnt run this but I am betting my wallet its D because there
+is no return statement and therefor you cannot do math with a data type of NONE. The
+function will run good and print out the value 2 but when the program tries to add
+when z gets instantiated it will produce the error
+
+12) Answer: B ..... This produces a float of 3.0 because the function works well and
+the 2 parameters that are being passed are in valid syntax. It should return 2.0 and then
+add 1 making z =3.0. Decimal Division is the slash and it turns the result into a float thus
+why we have a 3.0 as our answer.
+
+13) Answer: B ..... This is identical to the last problem the only difference is that
+the second parameter in f3() has a default value set in place for y if the user doesn't
+pass in an arguement for y when invoking the function. Since the program does set a value
+for y the function will run the same as the last problem.
+
+14) Answer: E ..... None of the above the variable z should have a value of 5.0 because
+just like the last problem we had this problem is very similar. The only difference
+is that on invoking f3() we didnt specify an arguement for the second parameter but 
+fortunately it has its own default value of 2 so the function will set y to 2 when it runs.
+The f3() function would return 4.0 and then a one will be added and set to z which makes z=5.0
+
+15) Answer: X = 10 ..... The answer is x = 10 because of scope. The print statement will use
+the global x value instantiated outside of the function because that is all it can access. The
+other x is local even though it is being returned to somewhere outside of the function, it is
+not being held by any variable. If the code said "x=inc_by_two(x)" this would be a different
+story.
